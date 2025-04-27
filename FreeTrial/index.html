@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudySync - Free Trial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="trial-section">
+    <div class="container">
+      <h2>🎉 Try StudySync for Free</h2>
+      <p>Explore our smart features for free – no credit card required.</p>
+
+      <div class="features">
+        <div class="feature-card">
+          <h3>🧠 AI Study Assistant</h3>
+          <p>Ask up to <span id="aiUses">5</span> questions/day.</p>
+          <a href="https://chatgpt.com/" onclick="useFeature('aiUses')">Ask AI</a>
+        </div>
+        <div class="feature-card">
+          <h3>📓 Notes Generator Using AI</h3>
+          <p>Generate <span id="notesUses">3</span> summaries/day.</p>
+          <a href="https://notegpt.io/ai-notes-generator" onclick="useFeature('notesUses')">Generate Note</a>
+        </div>
+        <div class="feature-card">
+          <h3>🧪 Quiz Builder Using AI</h3>
+          <p>Create <span id="quizUses">2</span> quizzes/day.</p>
+          <a href="https://www.quiz-maker.com/" onclick="useFeature('quizUses')">Create Quiz</a>
+        </div>
+      </div>
+
+      <a href="#" class="cta-btn">Start Free Trial</a>
+    </div>
+  </section>
+
+
+  <section class="video-section">
+    <div class="container">
+      <h2>🎥 Free Video Lectures</h2>
+      <p>Get a taste of our expert-taught lessons – no signup needed.</p>
+  
+      <div class="video-grid">
+        <div class="video-card">
+          <h3>Chemical Reaction & Equation</h3>
+          <button onclick="playVideo('./videos/video1.mp4')">▶️ Watch</button>
+        </div>
+        <div class="video-card">
+          <h3>Photosynthesis Explained</h3>
+          <button onclick="playVideo('./videos/video2.mp4')">▶️ Watch</button>
+        </div>
+        <div class="video-card">
+            <h3>Light Refelection & Refraction</h3>
+            <button onclick="playVideo('./videos/video3.mp4')">▶️ Watch</button>
+          </div>
+        <div class="video-card locked">
+          <a href="../pro/index.html">Elxoper More in Pro..</a>
+          <p class="lock-text">🔒 Pro Only</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal hidden">
+    <div class="modal-content">
+      <iframe id="videoFrame" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
+      <div style="text-align: right; margin-top: 10px;">
+        <button onclick="closeVideo()" style="background:#ef4444; color:white; padding:8px 12px; border:none; border-radius:6px;">Close</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

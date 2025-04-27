@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Sync</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" class="style">
+</head>
+<body>
+
+    <div class="header">
+        <button id="theme-toggle">🌙</button>
+        <header class="header_container">
+
+            <a href="#logo" class="logo">
+                <img src="./images/StudySyn.svg" alt="logoImage" class="logoimg">
+                <span class="logotext">Study Sync</span>
+            </a>
+
+            <nav class="nav" id="navbar">
+                <a href="#Home" class="nav-link">Home</a>
+                <a href="./feature/index.html" class="nav-link">Feature</a>
+                <a href="./pro/index.html" class="nav-link">Pricing</a>
+                <a href="./FAQ/index.html" class="nav-link">FAQ</a>
+                <a href="./about/index.html" class="nav-link">About Us</a>
+            </nav>
+
+            <nav class="slidebar">
+                <a href="#cancle" class="nav-link" onclick="hideSidebar()"><i class="fa-solid fa-xmark"></i></a>
+                <a href="#Home" class="nav-link">Home</a>
+                <a href="./feature/index.html" class="nav-link">Feature</a>
+                <a href="./pro/index.html" class="nav-link">Pricing</a>
+                <a href="./FAQ/index.html" class="nav-link">FAQ</a>
+                <a href="./about/index.html" class="nav-link">About Us</a>
+                <a href="./contact/index.html" class="nav-link">Contact Us</a>
+            </nav>
+
+            <a href="./contact/index.html" class="contact-button">
+                Contact Us
+            </a>
+
+            <button class="menu-button" id="menu-toggle" onclick="showSlidebar()">
+                <img src="./images/Hamburger.svg" alt="menuButton" class="menu-icon">
+            </button>
+        </header>
+    </div>
+
+    <div class="content">
+            <div class="main-content">
+
+                <div class="content-left">
+                    <p class="section-label">Very proud to introduce</p>
+                    <h1 class="section-title">Seamless Learning for Brighter Futures</h1>
+                    <p class="section-desc">
+                        StudySync makes learning effortless and fun! With smart tools,
+                         personalized study plans, and real-time AI help, 
+                         we're here to help students ace their studies and
+                          unlock their full potential — all in one seamless experience. 
+                          Ready to sync your success?
+                    </p>
+                    <div class="button-group">
+                        <a href="./signup/signup.html" class="Start">Start Now</a>
+                        <a href="./FreeTrial/index.html"class="Take">Free Trial</a>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div class="img-container">
+                        <img src="./images/usgs-hoS3dzgpHzw-unsplash.jpg" alt="scetion-img" class="section-img">
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+    <div class="company-container">
+        <h2 class="text">Trusted by the best</h2>
+        <div class="company-grid">
+            <div class="company logo">
+                <img src="./images/Google.svg" class="svg-logo">
+                 <span class="logo-text">Google</span>
+            </div>
+            <div class="company logo">
+                <img src="./images/Microsoft.svg" class="svg-logo">
+                 <span class="logo-text">Microsoft</span>
+            </div>
+            <div class="company logo">
+                <img src="./images/VectorEdu.svg" class="svg-logo">
+                 <span class="logo-text">VectorEdu</span>
+            </div>
+            <div class="company logo">
+                <img src="./images/linkedin-copy.svg" class="svg-logo">
+                 <span class="logo-text">Linkedin</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-container">
+        <div class="feature-content">
+            <div class="main-info">
+                <h2>
+                    Our Competative Advantage
+                </h2>
+                <p>
+                    StudySync stands out by combining smart technology, personalized learning, and affordability.
+                     With AI tools, real-time analytics, and seamless collaboration, 
+                     we empower students to study smarter, stay motivated, and achieve more—anytime, anywhere.
+                </p>
+            </div>
+            <div class="feature-grid">
+                <!-- card-1 -->
+                 <div class="feature-card">
+                    <div class="icon-container">
+                        <img src="./images/PersonalizedLearn.svg" class="feature-svg">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            🔍 Personalized Learning Paths
+                        </div>
+                        <div class="feature-desc">
+                            We tailor study plans to match each student’s pace, 
+                            strengths, and goals—making learning more efficient and effective.
+                        </div>
+                    </div>
+                 </div>
+                <!-- card-2 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img src="./images/Affordability.svg" alt="">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            🎯 Goal-Driven Progress Tracking
+                        </div>
+                        <div class="feature-desc">
+                            Stay on target with visual progress tools, 
+                            reminders, and motivational streaks.
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img src="./images/IndustryPatner.svg" alt="">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            🌐 Seamless Collaboration     
+                        </div>
+                        <div class="feature-desc">
+                            Work with study groups, share notes,
+                             and co-learn with peers, no matter where you are.
+                        </div>
+                    </div>
+                 </div>
+                <!-- card-4 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img src="./images/InnovativeTech.svg" alt="">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            📚 Curated Study Materials 
+                        </div>
+                        <div class="feature-desc">
+                            Get instant access to high-quality notes, flashcards, 
+                            quizzes, and videos—all crafted to boost understanding and retention.
+                        </div>
+                    </div>
+                 </div>
+                <!-- card-5 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img src="./images/Affordability.svg" alt="">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            📊 Smart Analytics
+                        </div>
+                        <div class="feature-desc">
+                            Track your performance, spot strengths and weaknesses, 
+                            and get personalized insights to improve faster and smarter.
+                        </div>
+                    </div>
+                 </div>
+                <!-- card-6 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img src="./images/Analytics.svg" alt="">
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            📱 Learn Anytime, Anywhere
+                        </div>
+                        <div class="feature-desc">
+                            Study on your schedule with a responsive, 
+                            mobile-first platform designed for life on the go.
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-contianer">
+        <h2 class="test-txt">
+            What Other Say About Us
+        </h2>
+        <div class="test-content">
+            <!-- card-1 -->
+            <div class="test-grid">
+                <div class="test-card">
+                    <div class="test-text">
+                        “StudySync completely changed the way I study.
+                         The AI assistant is like having a personal tutor 24/7!”
+                    </div>
+                    <div class="test-avatar">
+                        <img src="./images/avatar1.png" alt="">
+                    </div>
+                    <div class="test-info">
+                        <h3>
+                            Sarah Johnson
+                        </h3>
+                        <p>
+                            Class 12 Student
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- card-2 -->
+            <div class="test-grid">
+                <div class="test-card">
+                    <div class="test-text">
+                        “I’ve seen real improvement in my son’s performance. 
+                        The platform is not just educational—it’s engaging and safe.”
+                    </div>
+                    <div class="test-avatar">
+                        <img src="./images/avatar2.png" alt="">
+                    </div>
+                    <div class="test-info">
+                        <h3>
+                            Mr. Ramesh Iyer 
+                        </h3>
+                        <p>
+                            Parent
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3 -->
+             <div class="test-grid">
+                <div class="test-card">
+                    <div class="test-text">
+                        “As a teacher, I love how organized and student-friendly the platform is. 
+                        It keeps my students engaged and motivated.”
+                    </div>
+                    <div class="test-avatar">
+                        <img src="./images/avatar3.png" alt="">
+                    </div>
+                    <div class="test-info">
+                        <h3>
+                            Mr. Arvind K.
+                        </h3>
+                        <p>
+                            Chemistry Teacher
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter-container">
+        <div class="news-content">
+            <div class="left">
+                <img src="./images/img.jpeg" alt="" loading="lazy">
+            </div>
+            <div class="news-right">
+                <div class="news-info">
+                    <h2>Get the latest updates</h2>
+                    <p>Sign up for our newsletter</p>
+                </div>
+                    <form class="news-form">
+                        <input type="text" placeholder="Email" class="text-color">
+                        <button class="news-send">
+                            Send
+                        </button>
+                    </form>
+                    <div class="message" id="message"></div>
+                    <div class="info">
+                        By signing upt to newsletter you agree to our
+                        <a href="./terms and cond/index.html">Terms of service</a>
+                        and
+                        <a href="./terms and cond/index.html">
+                            Privacy Policy
+                        </a> 
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <footer class="footer">
+
+            <div class="footer-top">
+
+                <div class="comp-logo">
+                    <a class="logo-link" href="#">
+                        <img class="logo-svg" src="./images/StudySyn.svg"/>
+                        StudySync
+                    </a>
+                </div>
+                <p class="filler-text">Seamless Learning for Brighter Futures.</p>
+                <div class="social">
+                        <a class="social-link" href="#">
+                            <img src="./images/instagram.svg" class="social-icon" />
+                        </a>
+                        <a class="social-link">
+                            <img src="./images/linkedin.svg" class="social-icon" />
+                        </a>
+                        <a class="social-link">
+                            <img src="./images/Microsoft.svg" class="social-icon" />
+                        </a>
+                        <a class="social-link">
+                            <img src="./images/twitter.svg" class="social-icon" />
+                        </a>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                        <!-- column 1 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Products
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="#overview" class="footer-link">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="./pro/index.html" class="footer-link">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Customers</a>
+                                </li>
+                            </ul>
+                </div>
+                        <!-- column 2 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Company
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="./about/index.html" class="footer-link">About</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Investor Relations</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Jobs</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Press</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Blog</a>
+                                </li>
+                            </ul>
+                </div>
+                        <!-- column 3 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Support
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="./contact/index.html" class="footer-link">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Chat</a>
+                                </li>
+                                <li>
+                                    <a href="./FAQ/index.html"  class="footer-link">FAQ</a>
+                                </li>
+                            </ul>
+                </div>
+                        <!-- column 4 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Legal
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="./terms and cond/index.html" class="footer-link">Terms of Service</a>
+                                </li>
+                                <li>
+                                    <a href="./terms and cond/index.html" class="footer-link">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Cookie Settings</a>
+                                </li>
+                                
+                            </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-copyright">
+            © 2025 - Present StudySync. All rights reserved.
+            <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">⬆</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
